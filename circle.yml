@@ -3,7 +3,9 @@ machine:
     version: 6.1.0
 
 dependencies:
-  - npm install
+  override:
+    - npm install
 
 test:
-  - npm test
+  override:
+    - npm test
